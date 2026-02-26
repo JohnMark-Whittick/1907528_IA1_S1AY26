@@ -339,6 +339,29 @@ footer {
         padding: 10px; /* Gives more room for content on small screens */
     }
 
+/* Styling for the single big References card */
+.reference-list li {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    word-wrap: break-word; /* Prevents long URLs from breaking the layout */
 }
+
+.reference-list hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 15px 0;
+}
+
+.reference-list a {
+    color: var(--maroon-accent);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.reference-list a:hover {
+    text-decoration: underline;
+}
+
 
 
