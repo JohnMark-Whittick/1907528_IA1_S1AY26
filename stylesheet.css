@@ -63,6 +63,8 @@ section {
     list-style: none;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;       /* FIXED: This lets links move to a new line */
+    justify-content: center;
 }
 
 .nav-links a {
@@ -333,4 +335,5 @@ footer {
     main {
         padding: 10px; /* Gives more room for content on small screens */
     }
+
 }
