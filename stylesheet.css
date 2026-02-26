@@ -292,14 +292,14 @@ footer {
     transform: scale(1.05); /* Slight zoom on image when card is hovered */
 }
 
-/* UPDATED CARDS & CONTAINERS - RESOLVES CONFLICTS */
+/* CARDS & CONTAINERS */
 .card-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: nowrap; /* FIXED: Prevents 4th card from dropping down */
+    gap: 25px;
+    flex-wrap: nowrap; /* Keeps homepage cards in a line on desktop */
     margin-top: 20px;
-    width: 100%;       /* Ensures it uses the full 1100px of <main> */
+    width: 100%;
 }
 
 .card, .goal-card, .resume-card {
@@ -309,59 +309,31 @@ footer {
     box-shadow: var(--shadow);
     transition: 0.3s ease;
     border-top: 5px solid var(--maroon-accent);
-    flex: 1;           /* FIXED: Makes cards stretch to fill space evenly */
-    min-width: 0;      /* Allows cards to shrink to fit 4-in-a-row */
+    flex: 1;           /* Forces cards to stretch evenly */
+    width: 100%;       /* Ensures single cards (like References) fill the container */
+    min-width: 0;      
 }
 
-/* Specific fix for Goal Cards to ensure they don't look like pills */
-#smart-goals .card {
-    flex: 1;  /* Keeps the 2 cards wide and balanced */
-}
-
-/* Ensure images inside cards don't break the layout */
-.card img {
-    max-width: 100%;
-    height: auto;
-}
-
+/* MOBILE FIXES */
 @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stacks logo and links to prevent overlap */
+        padding: 10px;
+    }
+
+    .nav-links {
+        gap: 10px;
+        padding: 10px 0;
+    }
+
     .card-container {
-        flex-direction: column; /* Stacks the 4 cards and 2 goals vertically */
+        flex-direction: column; /* Stacks cards vertically on phones */
         align-items: center;
     }
 
     .card {
-        width: 100%; /* Makes cards full width on mobile */
-        max-width: 400px;
+        max-width: 100%; /* Allows cards to be full-width on mobile */
     }
-    
-    main {
-        padding: 10px; /* Gives more room for content on small screens */
-    }
-
-/* Styling for the single big References card */
-.reference-list li {
-    margin-bottom: 20px;
-    line-height: 1.8;
-    word-wrap: break-word; /* Prevents long URLs from breaking the layout */
-}
-
-.reference-list hr {
-    border: 0;
-    border-top: 1px solid #eee;
-    margin: 15px 0;
-}
-
-.reference-list a {
-    color: var(--maroon-accent);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.9rem;
-}
-
-.reference-list a:hover {
-    text-decoration: underline;
-}
 
 
 
