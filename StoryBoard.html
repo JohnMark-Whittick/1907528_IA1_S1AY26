@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Storyboard | John-Mark Whittick</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <div class="logo-circle">JW</div>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="Professional.html">Professional</a></li>
+            <li><a href="Personality.html">Personality</a></li>
+            <li><a href="Personal-Development.html">Personal Development</a></li>
+            <li><a href="Storyboard.html">Storyboard</a></li>
+            <li><a href="References.html">References</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="layouts">
+        <h2>Layout UI Design (Mobile & Desktop)</h2>
+        <p>The following wireframes outline the <code>&lt;div&gt;</code> groupings and structural flow of the website.</p>
+        
+        <div class="card-container" style="align-items: flex-start;">
+            <div class="resume-card" style="flex: 2;">
+                <h3>Desktop Layout (Min 950px)</h3>
+                <img src="../Assets/desktop-wireframe.png" alt="Desktop Wireframe with div labels" style="width:100%; border: 1px solid var(--maroon-accent);">
+                <p><small>Note: Includes <code>.navbar</code>, <code>.card-container</code>, and <code>footer</code> div groups.</small></p>
+            </div>
+
+            <div class="resume-card" style="flex: 1;">
+                <h3>Mobile Layout (Min 600px)</h3>
+                <img src="../Assets/mobile-wireframe.png" alt="Mobile Wireframe with div labels" style="width:100%; border: 1px solid var(--maroon-accent);">
+                <p><small>Stacked <code>.card</code> elements for small-screen responsiveness.</small></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="design-assets">
+        <h2>Style Guide & Design Assets</h2>
+        <div class="resume-card">
+            <div class="style-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                <div>
+                    <h3>Colour Palette</h3>
+                    <ul style="list-style: none;">
+                        <li><span style="display:inline-block; width:20px; height:20px; background:#fbdfb2; border:1px solid #333;"></span> Cream: RGB(251, 223, 178)</li>
+                        <li><span style="display:inline-block; width:20px; height:20px; background:#560505;"></span> Maroon: RGB(86, 5, 5)</li>
+                        <li><span style="display:inline-block; width:20px; height:20px; background:#ffffff; border:1px solid #333;"></span> White: RGB(255, 255, 255)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Typography</h3>
+                    <p><strong>Font-Family:</strong> 'Trirong', serif</p>
+                    <p><strong>Root Font-Weight:</strong> 400 (Normal)</p>
+                    <p><strong>Heading Weight:</strong> 700 (Bold)</p>
+                </div>
+                <div>
+                    <h3>Icons & Dimensions</h3>
+                    <p><strong>Logo Circle:</strong> 50px x 50px</p>
+                    <p><strong>Nav Links:</strong> 18px / 0.3s transition</p>
+                    <p><strong>Card Shadows:</strong> 0 4px 12px (Maroon Alpha 0.1)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources">
+        <h2>Project Resources</h2>
+        <div class="card-container">
+            <a href="https://github.com/YOUR_USERNAME/YOUR_REPO" class="card trait-card" style="text-decoration: none; text-align: center;">
+                <h3>GitHub Repository</h3>
+                <p>Access the IA#1 Source Code & Assets</p>
+            </a>
+            <a href="../Assets/storyboard-id1.pdf" class="card trait-card" style="text-decoration: none; text-align: center;">
+                <h3>Storyboard PDF</h3>
+                <p>Download the high-res layout designs</p>
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 John-Mark Whittick | CIT2011 Portfolio</p>
+</footer>
+
+</body>
+</html>
