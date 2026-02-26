@@ -50,6 +50,7 @@ section {
     justify-content: center;
     font-weight: bold;
     transition: 0.3s;
+    margin-bottom: 5px;
     border: 2px solid transparent;
 }
 
@@ -70,6 +71,7 @@ section {
 
 .nav-links a {
     text-decoration: none;
+    font-size: 0.9rem;
     color: var(--bg-cream);
     font-weight: 500;
     transition: 0.3s;
@@ -338,4 +340,5 @@ footer {
     }
 
 }
+
 
