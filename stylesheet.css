@@ -63,7 +63,8 @@ section {
     list-style: none;
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;       /* FIXED: This lets links move to a new line */
+    flex-wrap: wrap;/* FIXED: This lets links move to a new line */
+    padding: 15px 5%;
     justify-content: center;
 }
 
@@ -337,3 +338,4 @@ footer {
     }
 
 }
+
