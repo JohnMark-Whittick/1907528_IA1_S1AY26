@@ -32,10 +32,10 @@ main {
 }
 
 section {
-    margin-bottom: 60px; /* Consolidated section margin */
+    margin-bottom: 60px; 
 }
 
-/* NAVIGATION */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -69,7 +69,7 @@ section {
     list-style: none;
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;/* FIXED: This lets links move to a new line */
+    flex-wrap: wrap;
     padding: 15px 5%;
     justify-content: center;
 }
@@ -87,22 +87,21 @@ section {
     transform: translateY(-3px);
 }
 
-/* ADD THIS TO YOUR STYLESHEET.CSS */
 
 .facebio {
     display: flex;
-    flex-direction: column; /* Stacks text on top of image */
-    align-items: center;    /* Centers everything horizontally */
+    flex-direction: column; 
+    align-items: center;    
     text-align: center;
-    max-width: 600px;       /* Prevents text from stretching too wide */
-    margin: 0 auto;         /* Centers the whole block on the page */
+    max-width: 600px;       
+    margin: 0 auto;         
 }
 
 .hero-img {
-    width: 300px;           /* Set a specific size so it's not giant */
+    width: 300px;           
     height: 300px;
-    border-radius: 50%;     /* Makes it a circle */
-    object-fit: cover;      /* Prevents the photo from looking squished */
+    border-radius: 50%;     
+    object-fit: cover;      
     border: 8px solid var(--maroon-accent);
     margin: 20px 0;
     box-shadow: var(--shadow);
@@ -113,19 +112,18 @@ section {
     margin-bottom: 20px;
 }
 
-/* Hero Section Box */
 .facebio {
     background: var(--white);
     padding: 40px;
     border-radius: 8px;
     box-shadow: var(--shadow);
-    border-top: 8px solid var(--maroon-accent); /* Thicker top border for the main box */
+    border-top: 8px solid var(--maroon-accent); 
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
 }
 
-/* Profile Image Styling */
+
 .hero-img {
     width: 250px;
     height: 250px;
@@ -140,7 +138,7 @@ section {
     transform: scale(1.05);
 }
 
-/* Fix for the Download Button in Professional.html */
+
 .download-box {
     text-align: center;
     margin-top: 20px;
@@ -150,7 +148,7 @@ section {
 .download-btn {
     display: inline-block;
     background-color: var(--maroon-accent);
-    color: var(--white) !important; /* Forces text to stay white */
+    color: var(--white) !important; 
     padding: 12px 25px;
     text-decoration: none;
     font-weight: bold;
@@ -159,7 +157,7 @@ section {
     transition: 0.3s ease;
 }
 
-/* When you hover over the resume-card, keep the button visible */
+
 .resume-card:hover .download-btn {
     background-color: var(--white);
     color: var(--maroon-accent) !important;
@@ -170,7 +168,7 @@ section {
     transform: scale(1.05);
 }
 
-/* CARDS & CONTAINERS */
+
 .card-container, .goals-container {
     display: flex;
     justify-content: center;
@@ -188,13 +186,13 @@ section {
     border-top: 5px solid var(--maroon-accent);
 }
 
-.card { width: 250px; text-align: center; } /* Small cards for traits */
+.card { width: 250px; text-align: center; } 
 
-/* SHARED HOVER LOGIC */
+
 .card:hover, .goal-card:hover, .resume-card:hover {
     background: var(--maroon-light);
     color: var(--white);
-    border-color: var(--white); /* Turns top and any other borders white */
+    border-color: var(--white); 
     transform: translateY(-5px);
 }
 
@@ -202,7 +200,7 @@ section {
     color: var(--white);
 }
 
-/* SPECIAL ELEMENTS INSIDE CARDS */
+
 blockquote {
     font-style: italic;
     font-size: 1.2rem;
@@ -242,7 +240,7 @@ blockquote {
     color: var(--maroon-accent);
 }
 
-/* REPORT & BUTTON STYLING */
+
 .report-box {
     border-left: 8px solid var(--maroon-accent);
 }
@@ -273,7 +271,6 @@ blockquote {
     color: var(--maroon-accent) !important;
 }
 
-/* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
@@ -283,7 +280,6 @@ footer {
 }
 
 
-/* Storyboard Image Styling */
 .card img {
     margin-top: 10px;
     margin-bottom: 15px;
@@ -294,15 +290,15 @@ footer {
 
 .card:hover img {
     border-color: var(--white);
-    transform: scale(1.05); /* Slight zoom on image when card is hovered */
+    transform: scale(1.05); 
 }
 
-/* CARDS & CONTAINERS */
+
 .card-container {
     display: flex;
     justify-content: center;
     gap: 25px;
-    flex-wrap: nowrap; /* Keeps homepage cards in a line on desktop */
+    flex-wrap: nowrap; 
     margin-top: 20px;
     width: 100%;
 }
@@ -314,15 +310,15 @@ footer {
     box-shadow: var(--shadow);
     transition: 0.3s ease;
     border-top: 5px solid var(--maroon-accent);
-    flex: 1;           /* Forces cards to stretch evenly */
-    width: 100%;       /* Ensures single cards (like References) fill the container */
+    flex: 1;           
+    width: 100%;       
     min-width: 0;      
 }
 
-/* MOBILE FIXES */
+
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column; /* Stacks logo and links to prevent overlap */
+        flex-direction: column; 
         padding: 10px;
     }
 
@@ -332,14 +328,15 @@ footer {
     }
 
     .card-container {
-        flex-direction: column; /* Stacks cards vertically on phones */
+        flex-direction: column; 
         align-items: center;
     }
 
     .card {
-        max-width: 100%; /* Allows cards to be full-width on mobile */
+        max-width: 100%; 
     }
 }
+
 
 
 
